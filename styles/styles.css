@@ -1,0 +1,150 @@
+:root {
+  --primaryColor: #212121;
+  --backgroundColor: #fff;
+  --secondaryColor: #febc11;
+  --tertiaryColor: rgb(240, 240, 240);
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--backgroundColor) !important;
+  color: var(--primaryColor) !important;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+small {
+  font-family: 'Poppins', sans-serif;
+}
+
+.heading {
+  margin-bottom: 3rem;
+  display: inline-block;
+  font-size: 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--primaryColor);
+}
+
+.container {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+/* -------------------------------------      Navbar        ------------------------------------------------- */
+
+.navbar {
+  width: 100%;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-family: 'Parisienne', cursive;
+}
+
+/* -------------------------------------      Hero Section      ------------------------------------------------- */
+
+.hero-section {
+  background-image: url('./../img/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: var(--backgroundColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-section .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero-section h1 {
+  font-size: 4rem;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--backgroundColor);
+  margin-bottom: 40px;
+}
+
+.text-area {
+  border-radius: 5px;
+  padding: 1rem;
+  background: rgba(44, 44, 44, 0.8);
+}
+
+/* -------------------------------------      What We do      ------------------------------------------------- */
+
+.service-item {
+  margin: 1rem 0;
+}
+
+.service-item p {
+  margin: 1rem;
+  text-align: justify;
+}
+
+.service-item h2 {
+  color: var(--secondaryColor);
+  margin-bottom: 1rem;
+}
+
+.service-item h3 {
+  text-transform: uppercase;
+}
+
+/* -------------------------------------      About Us      ------------------------------------------------- */
+#about-us {
+  background-color: var(--tertiaryColor);
+}
+
+#about-us > .row > div {
+  text-align: center;
+}
+
+#about-us .container {
+  width: 100%;
+  margin: 0;
+  max-width: none;
+}
+
+#our-services {
+  color: var(--backgroundColor);
+  background-color: #3f2e33;
+}
+
+#about-us .heading {
+  padding-top: 3rem;
+}
+
+#our-services .heading {
+  border-bottom: 1px solid var(--backgroundColor);
+}
+
+#our-services .service-img {
+  border-radius: 100%;
+}
+
+.service-img {
+  text-align: center;
+}
+
+.service-img img {
+  border-radius: 100%;
+  width: 150px;
+  margin-bottom: 0.5rem;
+}
+
+.service-provided {
+  width: fit-content;
+  margin: 2rem auto;
+}
